@@ -4,9 +4,9 @@
 Este é um projeto Rails que permite consultar endereços a partir do CEP utilizando a API do ViaCEP.
 
 ## Requisitos
-* Ruby 2.6.3
-* Rails 5.2.3
-* Faraday 1.4.2
+* Ruby
+* Rails
+* Faraday
 
 ## Instalação
 1. Faça o clone deste repositório
