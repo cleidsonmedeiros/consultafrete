@@ -1,24 +1,21 @@
-# README
+# Consulta de Endereço
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Descrição
+Este é um projeto Rails que permite consultar endereços a partir do CEP utilizando a API do ViaCEP.
 
-Things you may want to cover:
+## Requisitos
+* Ruby 2.6.3
+* Rails 5.2.3
+* Faraday 1.4.2
 
-* Ruby version
+## Instalação
+1. Faça o clone deste repositório
+2. Instale as dependências rodando o comando `bundle install`
+3. Execute o servidor rodando o comando `rails s`
 
-* System dependencies
+## Uso
+Faça uma requisição HTTP POST para o endpoint `/consulta` com o parâmetro `cep` contendo o CEP que deseja consultar. A resposta será um JSON contendo as informações do endereço e o valor do frete para a região.
 
-* Configuration
+Exemplo de requisição usando cURL:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+curl -X POST -H "Content-Type: application/json" -d '{"cep":"01310-100"}' http://localhost:3000/consulta
